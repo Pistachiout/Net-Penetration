@@ -1,12 +1,13 @@
 代码中已包含大量注释，穿透的具体逻辑可前往进行查看：https://blog.csdn.net/qq_45808700/article/details/131417192
 
 ## 1 若没有公网ip，可进行本地测试，步骤如下：
-1.首先运行服务端main.go
+1. 首先运行服务端main.go
 2. 运行客户端main.go
 3. 运行应用端main.go
 4. 此时可分别打开AppPort和AppTargetPort均可发现应用服务
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/3c002c103dce4cd1904ae6d467b1cf31.png)
+![image](https://github.com/Pistachiout/Net-Penetration/assets/63298680/7ec916ca-8240-4b2b-9b8c-e35f57aec432)
+
 
 ## 2 公网ip测试步骤：以Linux云服务器为例
 1. 首先修改constant.go中的ServerIP为自己的公网ip

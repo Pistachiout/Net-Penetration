@@ -1,6 +1,6 @@
-代码具体逻辑可前往博客进行查看：https://blog.csdn.net/qq_45808700/article/details/131417192
+代码中已包含大量注释，穿透的具体逻辑可前往进行查看：https://blog.csdn.net/qq_45808700/article/details/131417192
 
-## 1 本地测试步骤：
+## 1 若没有公网ip，可进行本地测试，步骤如下：
 1.首先运行服务端main.go
 2. 运行客户端main.go
 3. 运行应用端main.go

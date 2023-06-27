@@ -4,7 +4,8 @@
 1. 首先运行服务端main.go
 2. 运行客户端main.go
 3. 运行应用端main.go
-4. 此时可分别打开AppPort和AppTargetPort均可发现应用服务
+4. 此时可前往浏览器进行测试，分别打开AppPort和AppTargetPort进行查看
+5. 在第一次打开AppTargetPort时会建立连接，故需要刷新后才会进行消息转发，看到内网的服务
 
 ![image](https://github.com/Pistachiout/Net-Penetration/assets/63298680/7ec916ca-8240-4b2b-9b8c-e35f57aec432)
 
@@ -15,4 +16,4 @@
 3. 在服务器运行上传的main
 4. 在客户端运行客户端main.go
 5. 运行应用端main.go
-6. 此时可打开公网ip:AppTargetPort可发现内网的应用服务
+6. 此时可打开公网ip:AppTargetPort，并进行刷新，即可发现内网的应用服务

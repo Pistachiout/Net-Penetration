@@ -11,9 +11,13 @@
 
 
 ## 2 公网ip测试步骤：以Linux云服务器为例
-1. 首先修改constant.go中的ServerIP为自己的公网ip
-2. 将服务端main.go打包，上传到Linux云服务器，并添加权限。windows下将go程序打包为linux可执行程序需要配置go编译环境，具体参考[windows下将go程序打包为linux可执行程序教程](https://blog.csdn.net/qq_45808700/article/details/131419641)：
-3. 在服务器运行上传的main
-4. 在客户端运行客户端main.go
-5. 运行应用端main.go
-6. 此时可打开公网ip:AppTargetPort，并进行刷新，即可发现内网的应用服务
+1. 首先修改constant.go中的ServerIP为自己的公网ip，并注意打开端口，若不进行端口修改，则是8081,8082,8083端口
+2. 将服务端main.go打包（本仓库中已包括打包好的可执行程序，若不需要修改端口可直接上传），上传到Linux云服务器，并chomd +x main添加权限。windows下将go程序打包为linux可执行程序需要配置go编译环境，具体参考[windows下将go程序打包为linux可执行程序教程](https://blog.csdn.net/qq_45808700/article/details/131419641)
+![image](https://github.com/Pistachiout/Net-Penetration/assets/63298680/125c2a87-b2a2-4bf4-9850-20c0da0e7b3d)
+
+
+   
+4. 在服务器运行上传的main
+5. 在客户端运行客户端main.go
+6. 运行应用端main.go
+7. 此时可打开公网ip:AppTargetPort，并进行刷新，即可发现内网的应用服务
